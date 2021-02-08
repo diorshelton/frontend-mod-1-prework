@@ -19,13 +19,15 @@ var stringTeachers = "4";
 var numberDogs = 0;
 
 // EXAMPLE: log the result of the comparison: is numberTeachers greater than numberStudents?
-console.log("Is numberTeachers greater than numberStudents?", numberTeachers > numberStudents);
+console.log("22 Is numberTeachers greater than numberStudents?", numberTeachers > numberStudents);
 // this should log: "Is numberTeachers greater than numberStudents?" false
 
 // YOU DO: log the result of the comparison: is numberTeachers less than numberStudents?
+console.log("26 Is numberTeachers less than numberStudents?", numberTeachers<numberStudents);
 // this should log: true
 
 // YOU DO: log the result of the comparison: is numberTeachers equal to stringTeachers? (use the == operator)
+console.log("30 Is numberTeachers equal to stringTeachers?", numberTeachers == stringTeachers);
 // this should log: true
 
 /*
@@ -35,6 +37,7 @@ perform this evaluation
 */
 
 // YOU DO: log the result of the comparison: is numberTeachers strictly equal to stringTeachers? (use the === operator)
+console.log("40 Is numberTeachers strickly equal to stringTeachers?",numberTeachers === stringTeachers);
 // this should log: false
 
 /*
@@ -48,18 +51,25 @@ you develop good habits that follow best practice, from now on, use the strict c
 */
 
 // YOU DO: log the result of the comparison: is numberTeachers not equal to numberStudents?
+console.log("54. Is numberTeachers not equal to numberStudents?", numberTeachers!==numberStudents);
 // this should log: true
+
 
 // YOU DO: log the result of the comparison: is numberStudents greater than or equal to 20?
+console.log("59. Is numberStudents greater than or equal to 20?", numberStudents>= 20);
 // this should log: true
 
+
 // YOU DO: log the result of the comparison: is numberStudents greater than or equal to 21?
+console.log("64. Is numberStudents greater than or equal to 21?", numberStudents>=21);
 // this should log: false
 
 // YOU DO: log the result of the comparison: is numberStudents less than or equal to 20?
+console.log("68 Is numberStudents less than or equal to 20?", numberStudents<=20);
 // this should log: true
 
 // YOU DO: log the result of the comparison: is numberStudents less than or equal to 21?
+console.log(" 72. Is numberStudents less than or equal to 21?", numberStudents<=21);
 // this should log: true
 
 
@@ -74,21 +84,24 @@ you develop good habits that follow best practice, from now on, use the strict c
 
 console.log(4 < 9);
 //YOU DO: Explain.
+  // Expression evaluates the statement 4 is less than 9. The comparison will evaluate true.
 
 var books = 3;
-console.logs(4 < books);
+console.log(4 < books);
 // YOU DO: Explain.
+  // Expression evaluates the statement 4 is less than the variable books. The variable books is declared and set equal to 3. The comparison will evaluate false.
 
 var friends = 6;
 var siblings = 2;
 console.log(friends > siblings);
 // YOU DO: Explain.
+  // The variables friends and siblings are declared. Their values are set equal to 6 and 2 respectively. The expression that follows the variable declarions evaluates the statement friends is greater than siblings. It evaluates as true because the number 6 is greater than 2.
 
 var attendees = 9;
 var meals = 8;
 console.log(attendees !== meals);
 // YOU DO: Explain.
-
+  // The variable attendees is declared and set to 9. The variable meals is declared and set to 8. The following expression evaluates the statement "attendees no equal meals" This evaluates true because the number 9 is not equal to the number 8.
 
 //-------------------
 // PART 3: Logical Operators
@@ -110,19 +123,20 @@ var age = 1;
 
 // YOU DO:
 // Determine if the dog loves to play and loves treats
-
+console.log('1',lovesToPlay&&lovesTreats);
 
 // Determine if the dog loves to play and loves the dog park
-
+console.log('2',lovesToPlay&&lovesDogPark);
 
 // Determine if the dog loves to play or loves the dog park
-
+console.log('3',lovesToPlay||lovesDogPark);
 
 // Determine if the dog loves to play and is a puppy
+console.log('4',lovesToPlay&&age);
 
 // What did your final line of code evaluate to? Why do you think that is? Explain.
-// ANSWER:
-
+// ANSWER: 
+  // My final line of code evaluated to 1. I think this happened because of the data type of age. Since age is not a boolean and it is being compared to lovesToPlay which is, type coersion is occuring. lovesToPlay is being converted from true to a number "1"
 //-------------------
 // FINAL CHECK
 //-------------------
