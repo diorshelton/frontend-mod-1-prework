@@ -82,7 +82,7 @@ In addition to **`if`** and **`else`**, **`else if`** can help us create more co
 ```javascript     
 if (condition1) {
     //block of code executes if condition1 evaluates to true
-} else if (condition2) {c
+} else if (condition2) {
     //block of code executes if condition1 evaluates to false and condition2 evaluates to true.
 } else if (condition3) {
     //block of code executes if condition1 and condition2 evaluate to false
