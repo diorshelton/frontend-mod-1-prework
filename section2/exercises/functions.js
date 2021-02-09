@@ -21,11 +21,17 @@ printName();
 printName();
 printName();
 printName();
-// Since the function was called 4 times, "Severus Snape" will log 4 times.
+// Since the  function was called 4 times, "Severus Snape" will log 4 times.
 
 
 // YOU DO: Write a function named sayHello that logs to the console "Oh, Hello!"
 // Then, call the function 2 times.
+function sayHello() {
+  console.log("Oh, Hello");
+}
+
+sayHello();
+sayHello();
 
 //-------------------
 // PART 2: Arguments and Parameters
@@ -34,19 +40,30 @@ printName();
 // YOU DO: Write a function named greetMe that takes an argument, a String, of a name.
 // The function should print out the value of the String that was passed in.
 // Then, call the function 3 times, each time, passing it a different name.
-
-
+function greetMe(name) {
+  console.log(name);
+}
+greetMe("Young");
+greetMe("Justin");
+greetMe("Antonio");
 
 // YOU DO: Write a function that takes in 2 numbers as arguments, Numbers, and logs their sum
 // Then, call that function 3 times, each time, passing in 2 different Numbers.
-
-
+function addSum(number1, number2) {
+  console.log(number1 + number2);
+}
+addSum(5,4);
+addSum(2,9);
+addSum(4,8);
 
 // YOU DO🎈: Write a function that takes in two strings and prints a concatenation
 // of those two strings, for example the arguments could be ("Oscar", "Ruck") and
 // the end result might be "Oscar and Ruck are BFFS".  Then, call that function.
+function spaServices(service1, service2) {
+  console.log("When we go to the spa, I really want " + service1 + " and " + service2);
+}
 
-
+spaServices("hot stone massage", "aromatherapy yoga");
 
 //-------------------
 // PART 3: Naming is Hard
@@ -58,8 +75,9 @@ that it is reasonable to type, but descriptive enough that others can infer the 
 
 Look at the code you wrote for the previous YOU DO🎈 - what did you name the function, and why?
 What did you name each parameter, and why?
-
+  
 EXPLAIN:
+  // I named the funtion spaServices because it concatenates the two arguments entered and refers to them as a group. I named the variables service1 and service2 because they are just two spa services.
 
 
 */
